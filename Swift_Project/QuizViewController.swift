@@ -13,7 +13,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var false_button: UIButton!
     @IBOutlet var true_button: UIButton!
     @IBOutlet var end_Button : UIButton!
-    @IBOutlet var nameLabel : UILabel!
+//    @IBOutlet var nameLabel : UILabel!
     
     var info: String?
     
@@ -25,10 +25,10 @@ class QuizViewController: UIViewController {
         if (count == 0 && sender == false_button) || (count == 1 && sender == false_button)
         {
             score += 10
-            nameLabel.isHidden = true
+            //nameLabel.isHidden = true
         }
         else{
-            nameLabel.isHidden = true
+            //nameLabel.isHidden = true
             
         }
         if count == 2 && sender == false_button{
@@ -48,9 +48,9 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        if let contentString = info {
-            nameLabel.text = contentString
-        }
+//        if let contentString = info {
+//            nameLabel.text = contentString
+//        }
         end_Button.isHidden = true
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){

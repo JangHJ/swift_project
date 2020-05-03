@@ -23,19 +23,19 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
         // Do any additional setup after loading the view.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == "QuizView"{
-            let destVC = segue.destination as! QuizViewController
-            
-            let nameValue: String! = inputName.text!
-            
-            var outString: String = "반갑습니다"
-            
-            outString += nameValue
-            outString += "님!"
-            destVC.info = outString
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+//        if segue.identifier == "QuizView"{
+//            let destVC = segue.destination as! QuizViewController
+//
+//            let nameValue: String! = inputName.text!
+//
+//            var outString: String = "반갑습니다"
+//
+//            outString += nameValue
+//            outString += "님!"
+//            destVC.info = outString
+//        }
+//    }
       func numberOfComponents(in pickerView: UIPickerView) -> Int {
           return 1
       }
