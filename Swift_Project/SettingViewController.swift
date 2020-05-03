@@ -14,7 +14,7 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         return true
     }
     
-    @IBOutlet var inputName: UITextField!
+    //@IBOutlet var inputName: UITextField!
     @IBOutlet var pickerSex: UIPickerView!
     let sexArray: Array<String> = ["남성", "여성"]
     

@@ -118,7 +118,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="kw7-di-Dsy"/>
                     <connections>
-                        <outlet property="inputName" destination="HmV-b3-zUm" id="fls-fU-aow"/>
                         <outlet property="pickerSex" destination="Ogm-6g-nmV" id="tAo-w5-TOM"/>
                     </connections>
                 </viewController>

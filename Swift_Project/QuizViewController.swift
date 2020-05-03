@@ -13,7 +13,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var false_button: UIButton!
     @IBOutlet var true_button: UIButton!
     @IBOutlet var end_Button : UIButton!
-//    @IBOutlet var nameLabel : UILabel!
+    @IBOutlet var nameLabel : UILabel!
     
     var info: String?
     
@@ -48,10 +48,11 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        if let contentString = info {
-//            nameLabel.text = contentString
-//        }
+        if let contentString = info {
+            nameLabel.text = contentString
+        }
         end_Button.isHidden = true
+        nameLabel.isHidden = true
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "resultView"{
