@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PJ01
+//  Swift_Project
 //
-//  Created by SWU mac on 2020/05/03.
+//  Created by SWU mac on 2020/05/04.
 //  Copyright © 2020 SWU mac. All rights reserved.
 //
 
