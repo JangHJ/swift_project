@@ -17,15 +17,15 @@ class SettingController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     @IBOutlet var inputName: UITextField!
     @IBOutlet var pickerSex: UIPickerView!
     let ageArray: Array<String> = ["남성", "여성"]
-    var name: String! = ""
-    var sex: String!
-    var score: Int! = 0
-    
+    var sex: String! = ""
+    var count: Int = 0
+    var name:String! = ""
     @IBOutlet var resultLabel: UILabel!
     
     
     @IBAction func doneButton(_ sender: UIButton) {
-        name = inputName.text!
+        name = inputName.text
+        
         let index = pickerSex.selectedRow(inComponent: 0)
         if index == 0{
             sex = "male"
@@ -36,24 +36,24 @@ class SettingController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     }
    
       @IBAction func Quiz_true(_ sender: UIButton) {
-          score += 10
+        self.count += 1
       }
       @IBAction func Quiz1_false(_ sender: UIButton) {
           return
       }
     
-    @IBAction func result(_ sender: Any) {
-           let n:String = name!
-           if score == 30{
-               resultLabel.text = n + "님, 훌륭해요!"
-           }
-           else if score == 20{
-               resultLabel.text = n + "님, 조금만 더 분발하세요!"
-           }
-           else{
-               resultLabel.text = n + "님, 공부가 필요해요 :("
-           }
-       }
+    @IBAction func result(_ sender: UIButton) {
+        let res : String! = name
+        if count == 3{
+            resultLabel.text = res
+        }
+        else if count == 2{
+            resultLabel.text = "님, 조금만 더 분발하세요!"
+        }
+        else{
+            resultLabel.text = res
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

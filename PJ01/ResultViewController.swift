@@ -2,7 +2,7 @@
 //  ResultViewController.swift
 //  PJ01
 //
-//  Created by SWU mac on 2020/05/03.
+//  Created by SWU mac on 2020/05/04.
 //  Copyright © 2020 SWU mac. All rights reserved.
 //
 
@@ -10,13 +10,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let preVC = self.SettingViewController
-        
 
         // Do any additional setup after loading the view.
-    }
     
 
     /*
@@ -28,5 +23,4 @@ class ResultViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
